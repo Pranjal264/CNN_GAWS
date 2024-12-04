@@ -1,6 +1,6 @@
 # CNN_GAWS
 
-<!-- This is the Git repository for the program 'CNN assisted PSF localization (CAPL)' based on the paper [Neural network-assisted localization of clustered point spread functions in single-molecule localization microscopy](https://doi.org/10.1111/jmi.13362). -->
+This is the Git repository for the CNN model of the paper  [Deep learning-driven wavefront sensing for grating-array based wavefront sensor](https://doi.org/10.1111/jmi.13362).
 
 ## Setting up
 
