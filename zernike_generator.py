@@ -1,5 +1,5 @@
 import numpy as np
-
+from scipy.special import factorial
 
 def zernike_gen(n, m, p, dim):
     """
@@ -31,9 +31,9 @@ def zernike_gen(n, m, p, dim):
     sum_ = 0
 
     for s in np.arange(0, np.floor((n - m) / 2 + 1), 1):
-        sum_ = sum_ + ((-1)**s * np.math.factorial(n - s) / (np.math.factorial(s) *
-                                                             np.math.factorial((n + m) / 2 - s) *
-                                                             np.math.factorial((n - m) / 2 - s)) * r**(n - 2 * s))
+        sum_ = sum_ + ((-1)**s * factorial(n - s) / (factorial(s) *
+                                                             factorial((n + m) / 2 - s) *
+                                                             factorial((n - m) / 2 - s)) * r**(n - 2 * s))
 
     r_nm = sum_
 
